@@ -3,8 +3,8 @@ const loginInput = document.querySelector('#login-form input')
 const greeting = document.querySelector('#greeting');
 
 //자바스크립트가 우리가 오타를 냈을때 틀렸다고 지적할 수 있게
-const HIDDEN_CLASSNAME = 'hidden';
-const USERNAME_KEY = "username";
+const HIDDEN_CLASSNAME ="hidden"
+const USERNAME_KEY = "username"
 
 function onLoginSubmit(event) {
   event.preventDefault();
@@ -18,8 +18,6 @@ function paintGreetings(username) {
   greeting.innerText = `Hello ${ username}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
-
-
 
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
